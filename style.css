@@ -38,6 +38,10 @@ section .heading{
     margin-bottom: 20px;
 }
 
+#about .heading h3{
+    color : white;
+}
+
 section .heading h2{
     text-transform: uppercase;
 
