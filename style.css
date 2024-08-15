@@ -38,7 +38,7 @@ section .heading{
     margin-bottom: 20px;
 }
 
-#about .heading h3{
+#about .heading h2, h4{
     color : white;
 }
 
