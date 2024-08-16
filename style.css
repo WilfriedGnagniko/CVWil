@@ -222,7 +222,7 @@ section .heading h2{
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 #portfolio .heading h2{
-    color: #833ab4;
+    color: white;
 }
 
 #portfolio img{
@@ -238,7 +238,9 @@ section .heading h2{
 
 }
 .title-project{
+    margin-top : 5px
     color: white;
+    font-style: underline;
 }
 
 /*PROJET*/
