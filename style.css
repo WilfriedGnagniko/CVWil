@@ -10,7 +10,7 @@ ul{
 }
 
 #about{
-    background-color: #3d2a2a;
+    background-color: linear-gradient(blue, pink);
 }
 
 img{
