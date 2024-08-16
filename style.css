@@ -216,7 +216,9 @@ section .heading h2{
     margin-bottom: 20px;
     font-weight: normal;
 }
+
 /* PORTOFOLIO */
+
 #portfolio{
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
@@ -242,6 +244,12 @@ section .heading h2{
     color: white;
     font-style: underline;
 }
+
+h5{
+    color: fcb045;
+    margin-bottom: 5px;
+}
+    
 
 /*PROJET*/
 
