@@ -183,6 +183,10 @@ section .heading h2{
     color: #3d2a2a;
 }
 
+a:hover{
+    cursor: pointer;
+}
+
 /* EDUCATION */
 
 #education .heading h2{
