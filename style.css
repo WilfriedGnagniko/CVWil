@@ -62,7 +62,7 @@ section .heading h2{
 /*SKILLS*/
 
 #skills .heading h2{
-    color: #3d2a2a;
+    color: #833ab4;
 }
 #skills .progress {
     height: 40px;
@@ -73,13 +73,14 @@ section .heading h2{
 }
 
 #skills .progress-bar{
-    background-color: #3d2a2a;
+    background-color: #fcb045;
 }
 
 /* EXPERIENCE */
 
 #experience{
-    background-color: #3d2a2a;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
 #experience .heading h2{
@@ -185,7 +186,7 @@ section .heading h2{
 /* EDUCATION */
 
 #education .heading h2{
-    color: #3d2a2a;
+    color: #833ab4;
     margin: 15px 0;
 }
 .education_block{
@@ -208,18 +209,20 @@ section .heading h2{
 
 }
 .education_block h3{
-    color: #3d2a2a;
+    color: #fcb045;
     margin: 15px 0px;
 }
 .education_block h4{
     margin-bottom: 20px;
     font-weight: normal;
 }
+/* PORTOFOLIO */
 #portfolio{
-    background-color: #3d2a2a;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 #portfolio .heading h2{
-    color: #fd1d1d;
+    color: #833ab4;
 }
 
 #portfolio img{
@@ -241,7 +244,7 @@ section .heading h2{
 /*PROJET*/
 
 #projet .heading h2{
-    color: #3d2a2a;
+    color: #833ab4;
 }
 #myCarousel .carousel-item{
     padding: 30px 30px 90px;
