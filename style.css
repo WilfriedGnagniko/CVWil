@@ -261,7 +261,7 @@ h5{
 }
 
 
-.modalProject1, .modalProject2 {
+.modalProject1, .modalProject2, .modalProject3 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -276,7 +276,7 @@ h5{
 }
 
 /* Modal Content */
-.modal-content1, .modal-content2 {
+.modal-content1, .modal-content2, .modal-content3 {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
@@ -285,7 +285,7 @@ h5{
 }
 
 /* The Close Button */
-.close1, .close2 {
+.close1, .close2, .close3 {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
