@@ -348,8 +348,8 @@
                         <p class="title-project text-center">Uno</p>
                         
                         <div id="modalProject1" class="modalProject1">
-                          <div class="modal-content">
-                            <span class="close">&times;</span>
+                          <div class="modal-content1">
+                            <span class="close1">&times;</span>
                             <h3>"UNO"</h3>
                             <br><br><br>      
                             <h5>
@@ -360,10 +360,31 @@
                             <br><br><br>  
                             <h6>Lien github : <i>indisponible</i></h6> 
                           </div>
-                        
                         </div>
-                        
                     </div>
+
+                    <div class="col-md-4">
+                        <a id="project2">
+                            <img src="project.png" class="img-thumbnail"  alt="Image 1 de Voyage">
+                        </a>
+                        <p class="title-project text-center">Uno</p>
+                        
+                        <div id="modalProject2" class="modalProject2">
+                          <div class="modal-content">
+                            <span class="close2">&times;</span>
+                            <h3>"UNO"</h3>
+                            <br><br><br>      
+                            <h5>
+                                Ce projet a été coder en Java et en JavaFX. Le but était d'implémenter le jeu UNO et de rendre le code le plus extensible possible.
+                                Des notions diverses ont été utilisées telles que le design pattern "Chain of Responsibility". La partie interface offre la possibilité de jouer avec 4 
+                                joueurs.
+                            </h5>
+                            <br><br><br>  
+                            <h6>Lien github : <i>indisponible</i></h6> 
+                          </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <br>
                 <div class="row">
@@ -427,14 +448,7 @@
                             contenant les points du plan. Ainsi on peut grâce à des boutons sélectionnées l'algorithme et la structure de donnée voulus pour tracer l'enveloppe convexe.
                         </h5>
                       </div>
-                      <div class="carousel-item" >
-                        <h3>"UNO"</h3>
-                        <h5>
-                            Ce projet a été coder en Java et en JavaFX.<br>Le but était d'implémenter le jeu UNO<br> et de rendre le code le plus extensible<br> possible.
-                            Des notions diverses ont été utilisées telles que <br>le design pattern "Chain of Responsibility". <br>La partie interface offre la possibilité de jouer avec 4 <br>
-                            joueurs.
-                        </h5>
-                      </div>
+                    
                       <div class="carousel-item" >
                         <h3>"Application Web E-commerce"</h3>
                         <h5>
@@ -486,19 +500,37 @@
 
         <script>
             var modalProject1 = document.getElementById("modalProject1");
+            var modalProject2 = document.getElementById("modalProject2");
+            
             var p1 = document.getElementById("project1");
-            var span = document.getElementsByClassName("close")[0];
+            var p2 = document.getElementById("project2");
+            
+            var span1 = document.getElementsByClassName("close1")[0];
+            var span2 = document.getElementsByClassName("close2")[0];
+            
             p1.onclick = function() {
             modalProject1.style.display = "block";
             }
-            span.onclick = function() {
+            p2.onclick = function() {
+            modalProject1.style.display = "block";
+            }
+            
+            span1.onclick = function() {
             modalProject1.style.display = "none";
             }
+            span2.onclick = function() {
+            modalProject1.style.display = "none";
+            }
+            
             window.onclick = function(event) {
                 if (event.target == modalProject1) {
                     modalProject1.style.display = "none";
                 }
+                if (event.target == modalProject2) {
+                    modalProject2.style.display = "none";
+                }
             }
+            
         </script>
                 
     </body>
