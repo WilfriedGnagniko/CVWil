@@ -331,22 +331,23 @@
                 <div class="row">
                     <h5>Universitaire</h5>
                     <div class="col-md-4">
-                        <a>
-                            <img src="project.png" class="img-thumbnail"  alt="Image 1 de Voyage" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <a id="projet1">
+                            <img src="project.png" class="img-thumbnail"  alt="Image 1 de Voyage">
                         </a>
                         <p class="title-project text-center">Uno</p>
                         
-                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <h5>
-                                    Ce projet a été coder en Java et en JavaFX.<br>Le but était d'implémenter le jeu UNO<br> et de rendre le code le plus extensible<br> possible.
-                                    Des notions diverses ont été utilisées telles que <br>le design pattern "Chain of Responsibility". <br>La partie interface offre la possibilité de jouer avec 4 <br>
-                                    joueurs.
-                                </h5>
-                            </div>
+                        <div id="modalProject1" class="modal">
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h5>
+                                Ce projet a été coder en Java et en JavaFX.<br>Le but était d'implémenter le jeu UNO<br> et de rendre le code le plus extensible<br> possible.
+                                Des notions diverses ont été utilisées telles que <br>le design pattern "Chain of Responsibility". <br>La partie interface offre la possibilité de jouer avec 4 <br>
+                                joueurs.
+                            </h5>
                           </div>
+                        
                         </div>
+                        
                     </div>
                 </div>
                 <br>
@@ -467,5 +468,34 @@
                 </div>   
             </div>   
         </footer>
+
+        <script>
+            // Get the modal
+            var modalProject1 = document.getElementById("modalProject1");
+            
+            // Get the button that opens the modal
+            var p1 = document.getElementById("project1");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            p1.onclick = function() {
+            modalProject1.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modalProject1.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+            modalProject1.style.display = "none";
+            }
+            }
+        </script>
+                
     </body>
 </html>
