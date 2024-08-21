@@ -262,7 +262,7 @@ h5{
 }
 
 
-.modalProject1, .modalProject2, .modalProject3 {
+.modalProject1, .modalProject2, .modalProject3, modalprojectPerso1 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -276,7 +276,7 @@ h5{
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.modal-content1, .modal-content2, .modal-content3 {
+.modal-content1, .modal-content2, .modal-content3, modal-contentPerso1 {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
@@ -284,7 +284,7 @@ h5{
   width: 80%;
 }
 
-.close1, .close2, .close3 {
+.close1, .close2, .close3, closePerso1 {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
