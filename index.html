@@ -411,11 +411,49 @@
                 <div class="row">
                      <h5>Personnel</h5>
                     <div class="col-md-2">
-                        <a>
-                            <img src="not-available2.jpg" class="img-thumbnail" alt="Image 1 de Voyage" width="50px" height="50px">
+                        <a id="projectPerso1">
+                            <img src="projet-1-1.png" class="img-thumbnail" alt="Image 1 de Voyage" width="50px" height="50px">
                         </a>
-                        <p class="title-project text-center">Titre bientôt disponible</p>
-                        
+                        <p class="title-project text-center">Spring cloud deployment on Kubernetes</p>
+                        <div id="projectPerso1" class="modalprojectPerso1">
+                          <div class="modal-contentPerso1">
+                            <span class="closePerso1">&times;</span>
+                            
+                            <h3>"Spring cloud deployment on k8s"</h3>
+                            <br><br><br>      
+                            <h5>
+                                Welcome to this project. I will be deploying spring cloud microservices on Kubernetes. The deployment process will be automated
+                                by a CI/CD pipeline. 
+                                <p>Tools : </p>
+                                - <p>Spring boot, Spring & Spring cloud,</p> 
+                                - <p>RabbitMQ message queue,</p> 
+                                - <p>Zikpin, Brave & Micrometer,</p>
+                                - <p>Elstic Logstash Kibana</p>
+                                - <p>OpenFeign & Resilience4j</p>
+                                - <p>PostgreSQL & PgAdmin</p>
+                                - <p>Github & Maven</p>
+                                - <p>Jenkins </p>
+                                - <p>Sonarqube</p>
+                                - <p>Docker & Docker hub</p>
+                                - <p>Kops, Helm & Kubernetes</p>
+                                - <p>AWS(ELB, Target group, Route53, S3, Autoscaling, VPC) </p>
+                                <br><br>
+                                Here is the project base architecture
+                                <div class="text-center">
+                                    <img src="projet-1-1.png" class="img-thumbnail" alt="Image 1 de Voyage" width="100%" height="100%">
+                                </div>
+                                It a very classic microservice architecture. We can retrieve a service discovery, an API Gateway, a centralized configuration server and database, 
+                                RabbitMQ server for asynchronous communicaition between the microservices, Zipkin server for the ditributed tracing, a centralized logback server 
+                                with ELK. Note also that we have encrypted all the sensitive informations in the config server with Java Cryptography Encryption. 
+                            
+                                
+                                
+
+                            </h5>
+                            <br><br><br>  
+                            <h6>Lien github : <i>indisponible</i></h6> 
+                          </div>
+                        </div>
                     </div>
                     <div class="col-md-2">
                         <a>
@@ -453,14 +491,18 @@
             var modalProject1 = document.getElementById("modalProject1");
             var modalProject2 = document.getElementById("modalProject2");
             var modalProject3 = document.getElementById("modalProject3");
+            var modalProjectPerso1 = document.getElementById("modalprojectPerso1");
             
             var p1 = document.getElementById("project1");
             var p2 = document.getElementById("project2");
             var p3 = document.getElementById("project3");
+            var pp1 = document.getElementById("projectPerso1");
             
             var span1 = document.getElementsByClassName("close1")[0];
             var span2 = document.getElementsByClassName("close2")[0];
             var span3 = document.getElementsByClassName("close3")[0];
+            
+            var spanp1 = document.getElementsByClassName("closePerso1")[0];
             
             p1.onclick = function() {
             modalProject1.style.display = "block";
@@ -471,6 +513,10 @@
             p3.onclick = function() {
             modalProject3.style.display = "block";
             }
+            pp1.onclick = function() {
+            modalProjectPerso1.style.display = "block";
+            }
+            
             
             span1.onclick = function() {
             modalProject1.style.display = "none";
@@ -480,6 +526,9 @@
             }
             span3.onclick = function() {
             modalProject3.style.display = "none";
+            }
+            spanp1.onclick = function() {
+            modalProjectPerso1.style.display = "none";
             }
             
             window.onclick = function(event) {
@@ -491,6 +540,9 @@
                 }
                 if (event.target == modalProject3) {
                     modalProject3.style.display = "none";
+                }
+                if (event.target == modalProjectPerso1) {
+                    modalProjectPerso1.style.display = "none";
                 }
             }
             
