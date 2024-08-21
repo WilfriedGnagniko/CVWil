@@ -459,18 +459,36 @@
                                     <img src="projet-1-2.png" class="img-thumbnail" alt="Image 1 de Voyage" width="100%" height="100%">
                                 </div>
                                 <br> 
-                                Well, this and interesting flow of execution . Imagine that we are in a IT company or whatever and developers have to maintain the previous project architecture
+                                Well, this and interesting flow of execution, right ?. Imagine that we are in a IT company or whatever and developers have to maintain the previous project architecture
                                 with more than 10 differents microservices. The automation process is not no more a luxury, it's a necessity. So this is my approach to continously build and deploy 
                                 new changes in the project. 
-                                A pipeline is created for each service . If commit is done, a webhook is sent to Jenkins which trigger the pipeline. Maven comes first. 
-                                It package the project, test it and to the checkstyle (it a tool which helps us to define rules to check our code). 
-                                Then a code analysis is done by Sonarqube. After that, the code pass through a quality gate (We also define our own rules here to maintain the
-                                quality of our code). Then is everything is good, Docker goes into action by building and uploading the image to dockerhub. 
-                                On this step finish, Helm will deploy the container on k8s cluster. 
+                                A pipeline is created for each service . If a commit is done, a webhook is sent to Jenkins which trigger the pipeline. Maven comes first. 
+                                It package the project, test it and to the checkstyle (it's a tool which helps us to define rules to check our code). 
+                                Then a code analysis is done by Sonarqube. After that, the code passes through a quality gate (We also define our own rules here to maintain the
+                                quality of our code) which also send a webhook to Jenkins. Then if everything is good, Docker goes into action by building and uploading the image to dockerhub. 
+                                Once these step are finished, Helm deploy the container on k8s cluster. 
+
+                                <br> 
+                                All this is done in a development environment. In production, different changes are applied : 
+                                <p>
+                                    - Config server, Discovery service and API gateway are no more used. ConfigMap and Secret come in action instead of Config server, 
+                                    LoadBalancer is used instead od Discovery server and Nginx Ingress Controller is used instead of API Gateway. Those tools are kubernetes native services. 
+                                    They are more convinient in production. 
+                                </p>
+                                <p> 
+                                    - PgAdmin will be more used. Despite the fact that an server authentication and SSL certificate are set, it is not secure to manage a database on an web interface in production.
+                                </p>
+                                <p> 
+                                    - PostgreSQL will be persisted on Elactic Block Store (EBS) and not on the instance. Replication will be also done accross many region.  
+                                </p>
+
+                                <br>
+                                Thank you for reading it. If you have another or better way to do deploy Spring cloud on k8s, do not hasitate to comment the post or send me a DM on LinkedIn. 
+            
                                 
                             </h5>
                             <br><br><br>  
-                            <h6>Lien github : <i>indisponible</i></h6> 
+                            <h6>Lien github : <i>not available</i></h6> 
                           </div>
                         </div>
                     </div>
