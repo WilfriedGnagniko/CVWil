@@ -11,7 +11,8 @@ ul{
 
 #about{
     background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+    background: linear-gradient(45deg, red, blue);
+    #background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
   #background: rgb(0,11,255);
 #background: linear-gradient(90deg, rgba(0,11,255,1) 0%, rgba(255,255,255,1) 50%, rgba(252,0,0,1) 100%); 
 }
@@ -81,7 +82,8 @@ section .heading h2{
 
 #experience{
     background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(45deg, red, blue);
+    #background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
 #experience .heading h2{
@@ -232,7 +234,8 @@ a:hover{
 
 #portfolio{
     background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(45deg, red, blue);
+    #background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 #portfolio .heading h2{
     color: white;
